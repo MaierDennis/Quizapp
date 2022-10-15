@@ -8,8 +8,7 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="style.css">
-    <script>src = "script.js"</script>
-
+    <script src="script.js"></script>
 
 
     <!--Bootstrap file-->
@@ -21,7 +20,7 @@
 
 </head>
 
-<body>
+<body onload="init()">
     <!-- As a heading -->
     <nav class="navbar bg-light">
         <div class="container-fluid">
@@ -32,16 +31,17 @@
         <div class="card w-50">
             <img src="img/quiz.jpg" class="card-img-top">
             <div class="card-body">
-                <h5 class="card-title">Frage</h5>
+                <h5 class="card-title" id="questionText">Frage</h5>
             </div>
             <div class="card width100" style="width: 18rem;">
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item">An item</li>
-                    <li class="list-group-item">A second item</li>
-                    <li class="list-group-item">A third item</li>
+                    <li class="list-group-item quiz-answer-card" id="answer_1">An item</li>
+                    <li class="list-group-item quiz-answer-card" id="answer_2">A second item</li>
+                    <li class="list-group-item quiz-answer-card" id="answer_3">A third item</li>
+                    <li class="list-group-item quiz-answer-card" id="answer_4">A third item</li>
                 </ul>
                 <div class="card-footer d-flex justify-content-around">
-                    <div><b>1</b> von <b>5</b> Fragen</div>
+                    <div><b>1</b> von <b id="numberOfQuestions"></b> Fragen</div>
                     <div><button type="button" class="btn btn-primary btn-lg">Nächste Frage</button></div>
                 </div>
             </div>

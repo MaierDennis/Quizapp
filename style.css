@@ -13,3 +13,8 @@ body {
 .width100 {
     width: 100% !important;
 }
+
+.quiz-answer-card:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.1);
+}

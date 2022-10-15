@@ -1,0 +1,15 @@
+body {
+    background-color: #007AFF !important;
+    
+}
+
+.cardContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.width100 {
+    width: 100% !important;
+}

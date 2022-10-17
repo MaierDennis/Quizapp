@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Quiz-App</title>
 
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
@@ -30,19 +30,36 @@
     <div class="cardContainer">
         <div class="card w-50">
             <img src="img/quiz.jpg" class="card-img-top">
-            <div class="card-body">
-                <h5 class="card-title" id="questionText">Frage</h5>
+
+
+            <div class="card-body" id="endScreen" style="display: none;">
+                Quiz beendet!
             </div>
-            <div class="card width100" style="width: 18rem;">
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item quiz-answer-card" id="answer_1" onclick="answer('answer_1')">An item</li>
-                    <li class="list-group-item quiz-answer-card" id="answer_2" onclick="answer('answer_2')">A second item</li>
-                    <li class="list-group-item quiz-answer-card" id="answer_3" onclick="answer('answer_3')">A third item</li>
-                    <li class="list-group-item quiz-answer-card" id="answer_4" onclick="answer('answer_4')">A third item</li>
-                </ul>
-                <div class="card-footer d-flex justify-content-around">
-                    <div><b id="numberCurrentQuestion"></b> von <b id="numberOfQuestions"></b> Fragen</div>
-                    <div><button type="button" class="btn btn-primary btn-lg" id="next-button" onclick="nextQuestion()" disabled>Nächste Frage</button></div>
+
+            <div id="questionBody">
+                <div class="card-body">
+                    <h5 class="card-title" id="questionText">Frage</h5>
+                </div>
+
+                <div class="card width100" style="width: 18rem;">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item quiz-answer-card" id="answer_1" onclick="answer('answer_1')">An item
+                        </li>
+                        <li class="list-group-item quiz-answer-card" id="answer_2" onclick="answer('answer_2')">A second
+                            item</li>
+                        <li class="list-group-item quiz-answer-card" id="answer_3" onclick="answer('answer_3')">A third
+                            item
+                        </li>
+                        <li class="list-group-item quiz-answer-card" id="answer_4" onclick="answer('answer_4')">A third
+                            item
+                        </li>
+                    </ul>
+                    <div class="card-footer d-flex justify-content-around">
+                        <div><b id="numberCurrentQuestion"></b> von <b id="numberOfQuestions"></b> Fragen</div>
+                        <div><button type="button" class="btn btn-primary btn-lg" id="next-button"
+                                onclick="nextQuestion()" disabled>Nächste Frage</button></div>
+                    </div>
+
                 </div>
             </div>
         </div>

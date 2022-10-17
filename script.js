@@ -86,7 +86,18 @@ function showQuestions() {
 }
 
 function answer(selection){
-    if(selection == questions[currentQuestion]['righ_answer']){
-        alert("richtig");
+    let question = questions[currentQuestion];
+    console.log('Selected answer is', selection);
+    let selectedQuestionNumber = selection.slice(-1);
+    console.log('selectedQuestionNumber is', selectedQuestionNumber);
+    console.log('Current question is', question['right_answer']);
+
+    if(selectedQuestionNumber == question['righ_answer']){
+        
+        document.getElementById(selection).classList.add('bg-success');
+    }
+    else {
+        
+        document.getElementById(selection).classList.add('bg-danger');
     }
 }

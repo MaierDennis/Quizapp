@@ -31,15 +31,27 @@
         <div class="card w-50">
             <img src="img/quiz.jpg" class="card-img-top">
 
+            <div class="progress mt-2">
+                <div class="progress-bar" id="progressBar" role="progressbar" aria-label="Example with label" style="width:0%;" >25%</div>
+              </div>
 
             <div class="card-body" id="endScreen" style="display: none;">
-                Quiz beendet!
+                <h1 class="d-flex justify-content-center">Quiz beendet!</h1>
+                    <br>
+                <h5> Du hast <b id="correctAnswers"></b> von <b id="allAnswers"></b> Fragen richtig beantwortet </h5>
+                
+                <div class="button-row"><button type="button" class="btn btn-primary btn-lg mt-4" id="playAgain"
+                    onclick="restartGame()">Erneut spielen</button></div>
             </div>
 
+            
+            
             <div id="questionBody">
                 <div class="card-body">
                     <h5 class="card-title" id="questionText">Frage</h5>
                 </div>
+
+                
 
                 <div class="card width100" style="width: 18rem;">
                     <ul class="list-group list-group-flush">

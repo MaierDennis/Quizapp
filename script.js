@@ -68,6 +68,7 @@ let questions = [
 
 
 let currentQuestion = 0;
+let correctAnswers = 0;
 
 function init() {
     document.getElementById('numberOfQuestions').innerHTML = questions.length;
@@ -80,8 +81,16 @@ function showQuestions() {
     if (currentQuestion >= questions.length) {
         document.getElementById('endScreen').style = '';
         document.getElementById('questionBody').style = 'display: none;';
+        document.getElementById('correctAnswers').innerHTML = correctAnswers;
+        document.getElementById('allAnswers').innerHTML = questions.length;
     }
     else {
+        let percent = (currentQuestion + 1) / questions.length;
+        percent = Math.round(percent * 100);
+        console.log(percent);
+        document.getElementById('progressBar').innerHTML = `${percent}%`
+        document.getElementById('progressBar').style.width = `${percent}%`
+
         let question = questions[currentQuestion];
 
         document.getElementById('numberCurrentQuestion').innerHTML = currentQuestion + 1;
@@ -101,6 +110,7 @@ function answer(selection) {
 
     if (selectedQuestionNumber == question['right_answer']) {
         document.getElementById(selection).classList.add('bg-success');
+        correctAnswers++;
     }
     else {
         document.getElementById(selection).classList.add('bg-danger');
@@ -127,4 +137,12 @@ function resetAnswerButtons() {
     document.getElementById('answer_4').classList.remove('bg-danger');
     document.getElementById('answer_4').classList.remove('bg-success');
 
+}
+
+function restartGame() {
+    currentQuestion = 0;
+    correctAnswers = 0;
+    document.getElementById('endScreen').style = 'display: none;';
+    document.getElementById('questionBody').style = '';
+    init();
 }

@@ -8,7 +8,7 @@ let questions = [
         "right_answer": 3
     },
     {
-        "question": "Wer hats erfunden?",
+        "question": "Wer hat Ricola erfunden?",
         "answer_1": "Deutschland",
         "answer_2": "Die Schweiz",
         "answer_3": "Österreich",
@@ -16,52 +16,52 @@ let questions = [
         "right_answer": 2
     },
     {
-        "question": "Wer hat HTML erfunden?",
-        "answer_1": "Robbie Williams",
-        "answer_2": "Lady Gaga",
-        "answer_3": "Tim Berners-Lee",
-        "answer_4": "Justin Bieber",
-        "right_answer": 3
+        "question": "Liegt Tengen vor, hinter oder neben dem Berg?",
+        "answer_1": "Vor",
+        "answer_2": "Hinter",
+        "answer_3": "Rechts daneben",
+        "answer_4": "Links daneben",
+        "right_answer": 1
     },
     {
-        "question": "Wer hat HTML erfunden?",
-        "answer_1": "Robbie Williams",
-        "answer_2": "Lady Gaga",
-        "answer_3": "Tim Berners-Lee",
-        "answer_4": "Justin Bieber",
-        "right_answer": 3
+        "question": "Welche Automarke übertrifft alle anderen?",
+        "answer_1": "BMW",
+        "answer_2": "VW",
+        "answer_3": "Mercedes",
+        "answer_4": "Audi",
+        "right_answer": 4
     },
     {
-        "question": "Wer hat HTML erfunden?",
-        "answer_1": "Robbie Williams",
-        "answer_2": "Lady Gaga",
-        "answer_3": "Tim Berners-Lee",
-        "answer_4": "Justin Bieber",
-        "right_answer": 3
+        "question": "Wie ist das Wetter am Mittwoch?",
+        "answer_1": "Klar",
+        "answer_2": "Bewölkt",
+        "answer_3": "Regen",
+        "answer_4": "Woher soll ich das wissen?",
+        "right_answer": 4
     },
     {
-        "question": "Wer hat HTML erfunden?",
-        "answer_1": "Robbie Williams",
-        "answer_2": "Lady Gaga",
-        "answer_3": "Tim Berners-Lee",
-        "answer_4": "Justin Bieber",
-        "right_answer": 3
+        "question": "Wer schimpft sich Idiot?",
+        "answer_1": "Andre",
+        "answer_2": "Jonas",
+        "answer_3": "Frieder",
+        "answer_4": "Alle davon",
+        "right_answer": 4
     },
     {
-        "question": "Wer hat HTML erfunden?",
-        "answer_1": "Robbie Williams",
-        "answer_2": "Lady Gaga",
-        "answer_3": "Tim Berners-Lee",
-        "answer_4": "Justin Bieber",
-        "right_answer": 3
+        "question": "Wo liegt Miramundo",
+        "answer_1": "Iran",
+        "answer_2": "Guatemala",
+        "answer_3": "Kasachstan",
+        "answer_4": "Neuseeland",
+        "right_answer": 2
     },
     {
-        "question": "Wer hat HTML erfunden?",
-        "answer_1": "Robbie Williams",
-        "answer_2": "Lady Gaga",
-        "answer_3": "Tim Berners-Lee",
-        "answer_4": "Justin Bieber",
-        "right_answer": 3
+        "question": "wie viel Ar sind ein Hektar?",
+        "answer_1": "10",
+        "answer_2": "100",
+        "answer_3": "10000",
+        "answer_4": "100000",
+        "right_answer": 2
     }
 
 ];

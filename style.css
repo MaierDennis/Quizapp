@@ -1,6 +1,5 @@
 body {
-    background-color: #007AFF !important;
-    
+    background-color: #becedf !important;
 }
 
 .cardContainer {
@@ -30,7 +29,6 @@ body {
 }
 
 .completeCard {
-    width: 800px;
     height: 330px;
     display: flex;
     flex-direction: row;
@@ -67,10 +65,25 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    
-    
+    flex-direction: column; 
 }
+
+.final-card-body {
+    background-image: url(img/brainbg.jpg);
+    background-size: cover;
+    width: 500px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+
+.final-card-body img {
+    height: 90px;
+    margin-bottom: 10px;
+} 
 
 .logo-size {
     display: flex;
@@ -113,6 +126,11 @@ body {
     --bs-card-border-radius: 0 !important ;
 }
 
+.btn a {
+    text-decoration: none;
+    color: white;
+}
+
 .btn img {
     height: 20px;
 }
@@ -120,4 +138,16 @@ body {
 .card-footer {
     width: 300px;
     margin-top: 20px;
+}
+
+.alignment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.score {
+    margin-right: 30px;
+    color: rgba(200, 96, 17, 0.89);
 }

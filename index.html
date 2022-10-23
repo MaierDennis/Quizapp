@@ -5,10 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz-App</title>
-
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <title>Quiz</title>
 
 
     <!--Bootstrap file-->
@@ -20,61 +18,45 @@
 
 </head>
 
-<body onload="init()">
+<body>
     <!-- As a heading -->
     <nav class="navbar bg-light">
         <div class="container-fluid">
             <span class="navbar-brand mb-0 h1">Quizapp</span>
         </div>
     </nav>
-    <div class="cardContainer">
-        <div class="card w-50">
-            <img src="img/quiz.jpg" class="card-img-top">
 
-            <div class="progress mt-2">
-                <div class="progress-bar" id="progressBar" role="progressbar" aria-label="Example with label" style="width:0%;" >25%</div>
-              </div>
-
-            <div class="card-body" id="endScreen" style="display: none;">
-                <h1 class="d-flex justify-content-center">Quiz beendet!</h1>
-                    <br>
-                <h5> Du hast <b id="correctAnswers"></b> von <b id="allAnswers"></b> Fragen richtig beantwortet </h5>
-                
-                <div class="button-row"><button type="button" class="btn btn-primary btn-lg mt-4" id="playAgain"
-                    onclick="restartGame()">Erneut spielen</button></div>
-            </div>
-
-            
-            
-            <div id="questionBody">
-                <div class="card-body">
-                    <h5 class="card-title" id="questionText">Frage</h5>
+    <div class="alignment" id="questionBody">
+        <div class="completeCard">
+            <div class="navBar">
+                <div class="logo-size"> <img src="Quizapp Dark/Quizapp/logo.png"></div>
+                <div class="table">
+                    <p> HTML</p>
+                    <p> CSS</p>
+                    <p> JS</p>
                 </div>
 
-                
+            </div>
 
-                <div class="card width100" style="width: 18rem;">
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item quiz-answer-card" id="answer_1" onclick="answer('answer_1')">An item
-                        </li>
-                        <li class="list-group-item quiz-answer-card" id="answer_2" onclick="answer('answer_2')">A second
-                            item</li>
-                        <li class="list-group-item quiz-answer-card" id="answer_3" onclick="answer('answer_3')">A third
-                            item
-                        </li>
-                        <li class="list-group-item quiz-answer-card" id="answer_4" onclick="answer('answer_4')">A third
-                            item
-                        </li>
-                    </ul>
-                    <div class="card-footer d-flex justify-content-around">
-                        <div><b id="numberCurrentQuestion"></b> von <b id="numberOfQuestions"></b> Fragen</div>
-                        <div><button type="button" class="btn btn-primary btn-lg" id="next-button"
-                                onclick="nextQuestion()" disabled>Nächste Frage</button></div>
+
+            <div class="questions">
+
+                <div>
+                    <div class="welcome">
+                        <div class="text-decoration">
+                            <h1>Welcome to <br> The Awesome HTML Quiz</h1>
+                        </div>
+                        <div class="text-decoration">
+                            <h3>Ready for the Challenge?</h3>
+                        </div>
+                        <button type="button" class="btn btn-primary btn-sm"><a
+                                href="question_design.html">Start</a></button>
                     </div>
-
                 </div>
             </div>
+
         </div>
+    </div>
 </body>
 
 </html>

@@ -27,6 +27,97 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.completeCard {
+    width: 800px;
+    height: 330px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
 
 }
 
+.navBar {
+    margin-left: 0;
+    background-color: rgba(34, 34, 70, 0.9);
+    width: 120px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.welcome {
+    background-image: url(img/brainbg.jpg);
+    background-size: cover;
+    width: 400px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.questions {
+    background-image: url(img/brainbg.jpg);
+    background-size: cover;
+    width: 500px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    
+}
+
+.logo-size {
+    display: flex;
+    justify-content: center;
+}
+
+.logo-size img {
+    height: 60px;
+    margin-top: 10px;
+}
+
+.text-decoration h1 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.text-decoration h3 {
+    text-align: center;
+    font-size: 20px;
+}
+
+.table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+
+}
+
+.table p {
+    color: azure;   
+}
+
+.card {
+    --bs-card-spacer-y: 0.5rem !important;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    width: 250px;
+    --bs-card-border-radius: 0 !important ;
+}
+
+.btn img {
+    height: 20px;
+}
+
+.card-footer {
+    width: 300px;
+    margin-top: 20px;
+}

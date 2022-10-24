@@ -171,3 +171,7 @@ function restartGame() {
     document.getElementById('questionBody').style = '';
     init();
 }
+
+function backToMenu(){
+    window.location = index.html;
+}

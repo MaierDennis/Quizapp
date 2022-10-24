@@ -9,6 +9,13 @@ body {
     min-height: 100vh;
 }
 
+.answer-formation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .width100 {
     width: 100% !important;
 }
@@ -29,11 +36,16 @@ body {
 }
 
 .completeCard {
-    height: 330px;
+    min-height: 330px;
     display: flex;
     flex-direction: row;
     border-radius: 20px;
+}
 
+.card-title {
+    width: 400px;
+    font-size: 1 rem !important;
+    height: 60px;
 }
 
 .navBar {
@@ -126,6 +138,10 @@ body {
     --bs-card-border-radius: 0 !important ;
 }
 
+.card:hover {
+    cursor: pointer;
+}
+
 .btn a {
     text-decoration: none;
     color: white;
@@ -136,8 +152,7 @@ body {
 }
 
 .card-footer {
-    width: 300px;
-    margin-top: 20px;
+    width: 400px;
 }
 
 .alignment {
@@ -150,4 +165,61 @@ body {
 .score {
     margin-right: 30px;
     color: rgba(200, 96, 17, 0.89);
+}
+
+.disable-click {
+    z-index: 1;
+    position: absolute;
+    width: 400px;
+    height: 200px;
+}
+
+@media(max-width: 630px) {
+    .completeCard {
+        flex-direction: column;
+    }
+
+    .navBar {
+        width: 300px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
+    }
+
+    .questions {
+        width: 300px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 0;
+    }
+
+    .table {
+        flex-direction: row;
+    }
+
+    .card-footer {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    
+    .progress {
+        width: 300px !important;
+    }
+
+    .center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-title {
+        max-width: 260px;
+        height: 100px;
+        margin-top: 20px;
+    }
+
+    .card-footer {
+        max-width: 250px;
+    }
+
 }

@@ -19,12 +19,7 @@
 </head>
 
 <body onload="init()">
-    <!-- As a heading -->
-    <nav class="navbar bg-light">
-        <div class="container-fluid">
-            <span class="navbar-brand mb-0 h1">Quizapp</span>
-        </div>
-    </nav>
+    
 
     <div class="alignment" id="endScreen" style="display: none;">
         <div class="completeCard">
@@ -83,8 +78,8 @@
             </div>
             <div class="questions">
 
-                <div>
-                    <div class="progress mt-2">
+                <div class="center">
+                    <div class="progress">
                         <div class="progress-bar" id="progressBar" role="progressbar" aria-label="Example with label"
                             style="width:0%;">25%</div>
                     </div>
@@ -94,25 +89,29 @@
                         <h5 class="card-title" id="questionText">Frage</h5>
                     </div>
 
-                    <div class="card mt-4">
-                        <div id="answer_1" class="card-body" onclick="answer('answer_1')">
-                            <div> This is some text within a card body.</div>
+                    <div class="answer-formation">
+                        <div id="disableClick"></div>
+                        <div class="card">
+                            <div id="answer_1" class="card-body" onclick="answer('answer_1')">
+                                <div> This is some text within a card body.</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card">
-                        <div id="answer_2" class="card-body" onclick="answer('answer_2')">
-                            <div> This is some text within a card body.</div>
+                        <div class="card">
+                            <div id="answer_2" class="card-body" onclick="answer('answer_2')">
+                                <div> This is some text within a card body.</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card">
-                        <div id="answer_3" class="card-body" onclick="answer('answer_3')">
-                            <div> This is some text within a card body.</div>
+                        <div class="card">
+                            <div id="answer_3" class="card-body" onclick="answer('answer_3')">
+                                <div> This is some text within a card body.</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card">
-                        <div id="answer_4" class="card-body" onclick="answer('answer_4')">
-                            <div> This is some text within a card body.</div>
+                        <div class="card">
+                            <div id="answer_4" class="card-body" onclick="answer('answer_4')">
+                                <div> This is some text within a card body.</div>
+                            </div>
                         </div>
+
                     </div>
 
                     <div class="card-footer d-flex justify-content-between">

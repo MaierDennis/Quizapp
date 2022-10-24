@@ -1,6 +1,6 @@
 let questions = [
     {
-        "question": "Wer hat HTML erfunden?",
+        "question": "Who invented HTML?",
         "answer_1": "Robbie Williams",
         "answer_2": "Lady Gaga",
         "answer_3": "Tim Berners-Lee",
@@ -101,7 +101,7 @@ function showEndScreen() {
 }
 
 function updateProgressBar(){
-    let percent = (currentQuestion + 1) / questions.length;
+    let percent = (currentQuestion) / questions.length;
     percent = Math.round(percent * 100);
     document.getElementById('progressBar').innerHTML = `${percent}%`
     document.getElementById('progressBar').style.width = `${percent}%`

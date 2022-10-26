@@ -19,7 +19,7 @@
 </head>
 
 <body onload="init()">
-    
+
     <div class="alignment" id="endScreen" style="display: none;">
         <div class="completeCard">
             <div class="navBar">
@@ -45,21 +45,17 @@
                     </div>
                 </div>
 
-                <button type="button" class="btn btn-primary"
+                <button type="button" class="btn btn-primary big-button"
                     style="--bs-btn-padding-y: .5rem; --bs-btn-padding-x: 3.5rem; --bs-btn-font-size: 1rem;"
                     id="playAgain" onclick="restartGame()">
-                    Replay
+                    REPLAY
                 </button>
-                <button type="button" class="btn btn-primary mt-2"
-                    style="--bs-btn-padding-y: .5rem; --bs-btn-padding-x: 3.5rem; --bs-btn-font-size: 1rem;">
-                    <a href="index.html">Menü</a>
-                </button>
+                <button type="button" class="btn btn-primary mt-2 big-button"
+                    style="--bs-btn-padding-y: .5rem; --bs-btn-padding-x: 3.5rem; --bs-btn-font-size: 1rem;"
+                    onclick="location.href='index.html';">MENU</button>
             </div>
         </div>
-
     </div>
-
-
 
 
 
@@ -83,9 +79,8 @@
                             style="width:0%;">25%</div>
                     </div>
 
-
                     <div class="card-body">
-                        <h5 class="card-title" id="questionText">Frage</h5>
+                        <p class="card-title" id="questionText">Frage</p>
                     </div>
 
                     <div class="answer-formation">
@@ -110,19 +105,16 @@
                                 <div> This is some text within a card body.</div>
                             </div>
                         </div>
-
                     </div>
 
                     <div class="card-footer d-flex justify-content-between">
                         <div><b id="numberCurrentQuestion"></b> von <b id="numberOfQuestions"></b> Fragen</div>
-                        <div><button type="button" class="btn btn-primary"
+                        <div><button type="button" class="btn btn-primary small-button"
                                 style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
                                 id="next-button" onclick="nextQuestion()" disabled>
                                 <img src="img/arrow.png">
                             </button></div>
                     </div>
-
-
                 </div>
             </div>
 

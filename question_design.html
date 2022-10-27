@@ -33,13 +33,13 @@
             </div>
             <div class="final-card-body">
                 <img src="img/brain result.png">
-                <div class="mb-4">
+                <div class="margin">
                     <b> COMPLETE</b><br>
                     <b> HTML QUIZ</b>
                 </div>
 
                 <div>
-                    <div class="d-flex flex-row mb-4">
+                    <div class="d-flex flex-row margin">
                         <div class="score"><b> YOUR SCORE</b></div>
                         <div><b id="correctAnswers"></b> / <b id="allAnswers"></b></div>
                     </div>
@@ -79,7 +79,7 @@
                             style="width:0%;">25%</div>
                     </div>
 
-                    <div class="card-body">
+                    <div class="question-head">
                         <p class="card-title" id="questionText">Frage</p>
                     </div>
 
@@ -108,7 +108,7 @@
                     </div>
 
                     <div class="card-footer d-flex justify-content-between">
-                        <div><b id="numberCurrentQuestion"></b> von <b id="numberOfQuestions"></b> Fragen</div>
+                        <div class="d-flex align-items-center number-of-questions"><b id="numberCurrentQuestion"></b> von <b id="numberOfQuestions"></b> Fragen</div>
                         <div><button type="button" class="btn btn-primary small-button"
                                 style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
                                 id="next-button" onclick="nextQuestion()" disabled>

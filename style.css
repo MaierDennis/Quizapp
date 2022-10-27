@@ -47,6 +47,7 @@ body {
     height: 100px;
     font-size: 30px !important;
     font-weight: 700;
+    text-align: center;
 
 }
 
@@ -78,6 +79,10 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column; 
+}
+
+.center {
+    height: 600px;
 }
 
 .final-card-body {
@@ -123,7 +128,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    margin-top: 20px;
+    margin-top: 100px;
+    font-size: 30px;
 
 }
 
@@ -149,6 +155,7 @@ body {
     font-weight: 500;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .btn a {
@@ -174,7 +181,7 @@ body {
 .card-footer {
     width: 950px;
     font-size: 30px;
-    padding-top: 60px;
+    margin-top: 55px;
 }
 
 .alignment {
@@ -201,58 +208,105 @@ body {
     height: 30px!important;
     font-size: 20px!important;
     margin-bottom: 50px;
+    margin-top: 15px;
+}
+
+.margin {
+    margin-bottom: 1.5rem !important;
+    font-size: 30px;
+}
+
+.question-head {
+    display: flex;
+    justify-content: center;
+}
+
+.number-of-questions {
+    width: 180px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 25px;
 }
 
 @media(max-width: 1270px) {
+    
+    .final-card-body {
+        background-image: url(img/brainbg.jpg);
+        background-size: cover;
+        width: 800px !important;
+        border-top-right-radius: 20px !important;
+        border-bottom-right-radius: 20px !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 500px;
+    }
+
+    .final-card-body img {
+        height: 160px;
+        margin-bottom: 25px;
+    } 
+
     .completeCard {
         min-height: 500px;
-
     }
 
     .navBar {
         width: 200px;
-        border-top-left-radius: 8px;
-        border-bottom-left-radius: 8px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+
+    .table {
+        margin-top: 70px;
+        font-size: 25px;
     }
 
     .questions {
         width: 800px;
-        border-bottom-right-radius: 8px;
-        border-top-right-radius: 8px;
+        border-bottom-right-radius: 20px;
+        border-top-right-radius: 20px;
+        height: 500px;
+    }
+
+    .card {
+        --bs-card-spacer-y: 0.5rem !important;
+        margin-top: 4px;
+        margin-bottom: 4px;
+        width: 450px;
+        height: 50px !important;
+        --bs-card-border-radius: 0 !important ;
+    }
+
+    .card-title {
+        max-width: 750px;
+        height: 80px;
+        text-align: center;
+        font-size: 25px !important; 
+    }
+
+    .card-body {
+        font-size: 20px;
     }
 
     .card-footer {
-        margin-bottom: 20px;
-        margin-top: 20px;
+        margin-top: 35px;
+        max-width: 750px;
+        font-size: 23px;
+        margin-bottom: 10px;
     }
     
     .progress {
-        width: 300px !important;
+        margin-top: 15px;
+        width: 750px !important;
+       
     }
 
     .center {
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-
-    .card-title {
-        max-width: 260px;
-        height: 100px;
-        margin-top: 20px;
-    }
-
-    .card-footer {
-        max-width: 250px;
-    }
-
-    .final-card-body {
-        width: 300px;
-        border-bottom-right-radius: 10px;
-        border-bottom-left-radius: 10px;
-        border-top-right-radius: 0;
-        padding-bottom: 20px;
-        padding-top: 20px;
     }
 
     .welcome {
@@ -268,38 +322,98 @@ body {
         margin-bottom: 20px;
     }
 
+    .small-button {
+        height: 50px !important;
+        width: 75px;
+    }
+
+    .disable-click {
+        z-index: 1;
+        position: absolute;
+        width: 450px;
+        height: 232px;
+    }
 }
 
-@media(max-width: 630px) {
-    .completeCard {
+@media(max-width: 1040px) {
+    
+    .final-card-body {
+        background-image: url(img/brainbg.jpg);
+        background-size: cover;
+        width: 600px !important;
+        border-top-right-radius: 15px !important;
+        border-bottom-right-radius: 15px !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         flex-direction: column;
+        height: 400px;
     }
+
+    .final-card-body img {
+        height: 120px;
+        margin-bottom: 10px;
+    } 
 
     .navBar {
-        width: 300px;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-        border-bottom-left-radius: 0;
-    }
-
-    .questions {
-        width: 300px;
-        border-bottom-right-radius: 10px;
-        border-bottom-left-radius: 10px;
-        border-top-right-radius: 0;
+        height: 400px;
+        width: 165px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
     }
 
     .table {
-        flex-direction: row;
+        margin-top: 20px;
+        font-size: 20px;
+    }
+    
+    .logo-size img {
+        height: 100px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .questions {
+        width: 600px;
+        border-bottom-right-radius: 20px;
+        border-top-right-radius: 20px;
+        height: 400px;
+    }
+
+    .card {
+        --bs-card-spacer-y: 0.5rem !important;
+        margin-top: 4px;
+        margin-bottom: 4px;
+        width: 350px;
+        height: 50px !important;
+        --bs-card-border-radius: 0 !important ;
+    }
+
+    .card-title {
+        max-width: 550px;
+        height: 60px;
+        text-align: center;
+        font-size: 20px !important; 
+    }
+
+    .card-body {
+        font-size: 15px;
     }
 
     .card-footer {
-        margin-bottom: 20px;
-        margin-top: 20px;
+        margin-top: 10px;
+        max-width: 550px;
+        font-size: 18px;
+        margin-bottom: 15px;
     }
     
     .progress {
-        width: 300px !important;
+        width: 550px !important;
+        height: 20px!important;
+        font-size: 15px!important;
+        margin-bottom: 0px;
+        margin-top: 15px;
+       
     }
 
     .center {
@@ -308,23 +422,272 @@ body {
         align-items: center;
     }
 
-    .card-title {
-        max-width: 260px;
-        height: 100px;
+    .welcome {
+        width: 600px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+
+    .text-decoration {
+        max-width: 500px;
+        margin-bottom: 20px;
+    }
+
+    .text-decoration h1 {
+        font-size: 40px;
+    }
+
+    .text-decoration h3 {
+        font-size: 30px;
+    }
+
+    .small-button {
+        height: 40px !important;
+        width: 65px;
+    }
+
+    .big-button {
+        width:160px !important;
+        height: 36px;
+        font-size: 13px !important;
+    }
+
+    .margin {
+        margin-bottom: 1.5rem !important;
+        font-size: 25px;
+    }
+
+    .question-head {
+        margin-top: 5px;
+    }
+
+    .disable-click {
+        z-index: 1;
+        position: absolute;
+        width: 350px;
+        height: 232px;
+    }
+
+}
+
+@media(max-width: 800px) {
+    
+    .final-card-body {
+        background-image: url(img/brainbg.jpg);
+        background-size: cover;
+        width: 450px !important;
+        border-top-right-radius: 15px !important;
+        border-bottom-right-radius: 15px !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 350px;
+    }
+
+    .final-card-body img {
+        height: 80px;
+        margin-bottom: 7px;
+    } 
+
+    .navBar {
+        height: 350px;
+        width: 145px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+    
+    .logo-size img {
+        height: 80px;
         margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .questions {
+        width: 450px;
+        border-bottom-right-radius: 20px;
+        border-top-right-radius: 20px;
+        height: 350px;
+    }
+
+    .card {
+        --bs-card-spacer-y: 0.5rem !important;
+        margin-top: 4px;
+        margin-bottom: 4px;
+        width: 300px;
+        height: 40px !important;
+        --bs-card-border-radius: 0 !important ;
+    }
+
+    .card-title {
+        max-width: 400px;
+        height: 60px;
+        text-align: center;
+        font-size: 18px !important; 
+    }
+
+    .card-body {
+        font-size: 15px;
     }
 
     .card-footer {
-        max-width: 250px;
+        margin-top: 10px;
+        max-width: 400px;
+        margin-bottom: 10px;
+    }
+    .number-of-questions {
+        font-size: 20px;
+        width: 150px;
+    
+    }
+    
+    .progress {
+        width: 400px !important;
+        height: 18px!important;
+        font-size: 14px!important;
+        margin-bottom: 0px;
+        margin-top: 12px;
+       
+    }
+
+    .center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .welcome {
+        width: 600px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+
+    .text-decoration {
+        max-width: 500px;
+        margin-bottom: 20px;
+    }
+
+    .text-decoration h1 {
+        font-size: 40px;
+    }
+
+    .text-decoration h3 {
+        font-size: 30px;
+    }
+
+    .small-button {
+        height: 35px !important;
+        width: 55px;
+    }
+
+    .big-button {
+        width:160px !important;
+        height: 36px;
+        font-size: 13px !important;
+    }
+
+    .margin {
+        margin-bottom: 1.5rem !important;
+        font-size: 25px;
+    }
+
+    .question-head {
+        margin-top: 5px;
+    }
+
+    .disable-click {
+        z-index: 1;
+        position: absolute;
+        width: 300px;
+        height: 192px;
+    }
+
+}
+
+@media(max-width: 630px) {
+    .alignment {
+        height: 100vh;
+    }
+    .completeCard {
+        flex-direction: column;
+    }
+
+    .navBar {
+        width: 100vw !important;
+        height: 30vh;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    .logo-size img {
+        height: 15vh;
+        margin-top: 3vh;
+        margin-bottom: 2vh;
+    }
+
+    .table {
+        flex-direction: row;
+        font-size: 30px;
+    }
+
+    .questions {
+        
+        width: 100vw;
+        height: 70vh;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+    .card-footer {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    
+    .progress {
+        width: 90vw !important;
+    }
+
+    .center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .card {
+        width: 75vw;
+        height: 6vh !important;
+    }
+
+    .card-title {
+        max-width: 90vw;
+        height: 100px;
+        font-size: 25px !important;
+    }
+
+    .card-footer {
+        max-width: 90vw;
     }
 
     .final-card-body {
-        width: 300px;
-        border-bottom-right-radius: 10px;
-        border-bottom-left-radius: 10px;
+        width: 100vw !important;
+        height: 70vh;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
         border-top-right-radius: 0;
         padding-bottom: 20px;
         padding-top: 20px;
+    }
+
+    .final-card-body img {
+        height: 180px;
+        margin-bottom: 50px;
     }
 
     .welcome {
@@ -338,6 +701,28 @@ body {
     .text-decoration {
         max-width: 250px;
         margin-bottom: 20px;
+    }
+
+    .margin {
+        font-size: 40px;
+    }
+
+    .big-button {
+        width:200px !important;
+        height: 50px;
+        font-size: 18px !important;
+    }
+
+    .small-button {
+        height: 40px !important;
+        width: 60px;
+    }
+
+    .disable-click {
+        z-index: 1;
+        position: absolute;
+        width: 75vw;
+        height: 28vh;
     }
 
 }

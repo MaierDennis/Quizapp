@@ -686,8 +686,7 @@ body {
     }
 
     .final-card-body img {
-        height: 180px;
-        margin-bottom: 50px;
+        height: 20vh;
     }
 
     .welcome {
@@ -704,7 +703,7 @@ body {
     }
 
     .margin {
-        font-size: 40px;
+        font-size: 25px;
     }
 
     .big-button {

@@ -89,7 +89,7 @@ function showQuestions() {
     }
 }
 
-function gameIsOver(){
+function gameIsOver() {
     return currentQuestion >= questions.length;
 }
 
@@ -100,7 +100,7 @@ function showEndScreen() {
     document.getElementById('allAnswers').innerHTML = questions.length;
 }
 
-function updateProgressBar(){
+function updateProgressBar() {
     let percent = (currentQuestion) / questions.length;
     percent = Math.round(percent * 100);
     document.getElementById('progressBar').innerHTML = `${percent}%`
@@ -124,24 +124,31 @@ function answer(selection) {
     let idOfRightAnswer = `answer_${question['right_answer']}`;
 
     if (rightAnswerSelected(selectedQuestionNumber, question)) {
-        document.getElementById(selection).classList.add('bg-success');
-        AUDIO_SUCCESS.play();
-        correctAnswers++;
-        
+        rightAnswer(selection);
     }
     else {
-        document.getElementById(selection).classList.add('bg-danger');
-        document.getElementById(idOfRightAnswer).classList.add('bg-success');
-        AUDIO_FAIL.play();
-        
+        wrongAnswer(selection, idOfRightAnswer);
     }
     document.getElementById('disableClick').classList.add('disable-click');
     document.getElementById('next-button').disabled = false;
 }
 
- function rightAnswerSelected(selectedQuestionNumber, question){
+function rightAnswer(selection) {
+    document.getElementById(selection).classList.add('bg-success');
+    AUDIO_SUCCESS.play();
+    correctAnswers++;
+}
+
+function wrongAnswer(selection, idOfRightAnswer) {
+    document.getElementById(selection).classList.add('bg-danger');
+    document.getElementById(idOfRightAnswer).classList.add('bg-success');
+    AUDIO_FAIL.play();
+}
+
+
+function rightAnswerSelected(selectedQuestionNumber, question) {
     return selectedQuestionNumber == question['right_answer'];
- }
+}
 
 function nextQuestion() {
     currentQuestion++;
@@ -152,7 +159,6 @@ function nextQuestion() {
 }
 
 function resetAnswerButtons() {
-
     document.getElementById('answer_1').classList.remove('bg-danger');
     document.getElementById('answer_1').classList.remove('bg-success');
     document.getElementById('answer_2').classList.remove('bg-danger');
@@ -161,7 +167,6 @@ function resetAnswerButtons() {
     document.getElementById('answer_3').classList.remove('bg-success');
     document.getElementById('answer_4').classList.remove('bg-danger');
     document.getElementById('answer_4').classList.remove('bg-success');
-
 }
 
 function restartGame() {
@@ -172,6 +177,6 @@ function restartGame() {
     init();
 }
 
-function backToMenu(){
+function backToMenu() {
     window.location = index.html;
 }
